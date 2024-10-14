@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Terminal</title>
+    <script scr="script.js" type="text/javascript" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+    <main>
+        <div class="header"> bash - Emir Samsam Portfolio</div>
+        <div class="terminal" id="terminalWindow" >
+            <section id="terminal">
+                <div class="command">Successful login - <span class="error" id="date"></span></div>
+                <div class="title">Mi portfolio</div>
+                Hola! Bienvenidos a mi portfolio, para ver la lista de commandos ingrese <span class="command">help</span>
+            </section>
+            <div class="prompt">
+                <span class="command">$</span> <span class="title">getuser</span> <input id="promptInput"/>
+            </div>
+        </div>
+    </main>
+    
+    <div class="hidden" id="promptClone"> 
+        <span class="command">$</span> <span class="title"> getuser</span> <span class="promptCloneInput"></span>
+        <div class="promptCloneContent"></div>
+    </div>
+
+    <div class="hidden" id="help">
+        <div class="sectionTitle">Puede ingresar cualquiera de los siguientes comandos: </div>
+        <div class="indent">
+            <div>
+                <span class="command">about</span>:
+                <div class="indent">Sobre mí</div> 
+            </div>
+            <div>
+                <span class="command">social</span>:
+                <div class="indent">Redes sociales</div> 
+            </div>
+            <div>
+                <span class="command">skills</span>:
+                <div class="indent">Herramientas con las que trabajo</div> 
+            </div>
+            <div>
+                <span class="command">education</span>:
+                <div class="indent">Todo sobre mi formación</div> 
+            </div>
+            <div>
+                <span class="command">experience</span>:
+                <div class="indent">Donde trabajé hasta ahora</div> 
+            </div>
+            <div>
+                <span class="command">projects</span>:
+                <div class="indent">Listado de mis proyectos</div> 
+            </div>
+            <div>
+                <span class="command">clear</span>:
+                <div class="indent">Borrar el historial de la terminal</div> 
+            </div>
+        </div>
+    </div>
+
+    <div class="hidden" id="projects">
+        <div class="sectionTitle">Proyectos: </div>
+        <div class="indent">
+            <span class="title">Proyecto 1 </span> - <a href="link.com" target="_blank"><span class="command">Link a Github</span> </a>
+        </div>
+        <div class="indent">
+            <span class="title">Proyecto 2 </span> - <a href="link.com" target="_blank"><span class="command">Link a Github</span> </a>
+        </div>
+        <div class="indent">
+            <span class="title">Proyecto 3 </span> - <a href="link.com" target="_blank"><span class="command">Link a Github</span> </a>
+        </div>
+    </div>
+
+    <div class="hidden" id="skills">
+        <div class="sectionTitle">Skills: </div>
+        <div class="indent">
+            <div>
+                <span class="command">Programación</span>
+                <div class="indent">
+                    <span class="title">Javascript</span>
+                    <span class="title">CSS</span>
+                    <span class="title">HTML</span>
+                    <span class="title">GIT</span>
+                </div>
+            </div>
+            <div>
+                <span class="command">Idiomas</span>
+                <div class="indent">
+                    <span class="title">Español</span>
+                    <span class="title">Inglés</span>
+                    <span class="title">Portugués</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="hidden" id="about">
+        <div class="sectionTitle">Sobre mí: </div>
+            <div class="indent">
+                Hola! Mi nombre es <span class="command">Emir Samsam</span>
+                Churu ruru rurulu Chulu
+            </div>
+        </div>
+    </div>
+
+    <div class="hidden" id="experience">
+        <div class="sectionTitle">Experiencia: </div>
+        <div class="indent">
+            <span class="title">Merchandiser // CCU Argentina</span> - <span class="command">Noviembre 2021 - Actualidad</span>
+            <div class="indent">
+                Me desempeñé como trade marketing en una reconocida cervecera, liderando la ejecución en puntos de venta (PDV) para resaltar nuestras marcas de cerveza y lograr una mayor presencia en las góndolas. Mantuve una interacción directa con el equipo de marketing para realizar el relevamiento de precios y estudios de volumen de ventas.
+            </div> 
+        </div>
+        <div class="indent">
+            <span class="title">Representante de atención al cliente // Telemercado S. R. L.</span> - <span class="command">Marzo 2013 - Mayo 2019</span>
+            <div class="indent">
+                Durante mi trayectoria de 6 años en el mencionado call center bancario, desempeñé un papel clave en la atención telefónica de consultas, registro, derivación y seguimiento de solicitudes y reclamos. Adquirí una valiosa experiencia en la venta de tarjetas de crédito y productos financieros relacionados.
+            </div> 
+        </div>
+    </div>
+        
+    <div class="hidden" id="social">
+        <div class="sectionTitle">Redes sociales: </div>
+        <div class="indent">
+            <span class="title">Github</span> - <span class="command">https://github.com/emir-argcoder</span>
+        </div>
+        <div class="indent">
+            <span class="title">LinkedIn</span> - <span class="command">https://www.linkedin.com/in/esamsam/</span>
+        </div>
+    </div>
+        
+    <div class="education hidden" id="education">
+        <div class="sectionTitle">Formación: </div>
+        <div class="indent">
+            <span class="title">Téc. en Desarrollo Web y Aplicaciones Digitales // Instituto Superior Politécnico Córdoba</span> <span class="command">Próximo a recibir en 2025</span>
+            <div class="indent">
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Odit harum beatae autem, sit dolorem vitae doloremque explicabo cupiditate, architecto iusto odio culpa facilis voluptatem saepe quis fugiat minus enim qui!
+            </div> 
+        </div>
+        <div class="indent">
+            <span class="title">Desarrollador Full Stack Junior // Instituto Superior Politécnico Córdoba </span> <span class="command">Finalizado en 2023</span>
+            <div class="indent">
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Odit harum beatae autem, sit dolorem vitae doloremque explicabo cupiditate, architecto iusto odio culpa facilis voluptatem saepe quis fugiat minus enim qui!
+            </div> 
+        </div>
+    </div>
+        
+</body>
+        
+</html>

@@ -1,0 +1,25 @@
+:root { 
+    --gray: #626963;
+    --background: #272A36;
+    --header: #4a4a4a;
+    --text: #F5F3F1;
+    --title: #eeb7eb;
+    --command: #68ff99;
+    --error: #ff8383;
+}
+
+body {
+    display: grid;
+    place-items: center;
+    background-color: var(--gray);
+    color: var(--text);
+    font-family: ‘Space Mono’, monospace;
+    font-size: 14px;
+    height: 100vh;
+}
+
+main {
+    height: 550px;
+    width: 550px;
+    max-width: 550px;
+}
